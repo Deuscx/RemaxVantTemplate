@@ -1,0 +1,43 @@
+{
+  "name": "wexin-app",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Remax Project",
+  "main": "index.js",
+  "keywords": [],
+  "author": "Deuscx <48537979+Deuscx@users.noreply.github.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev:wechat": "remax build -t wechat -w",
+    "build": "cross-env NODE_ENV=production remax build -t wechat",
+    "lint": "eslint --color --ext .js,.jsx --fix src",
+    "format": "prettier --write \"src/**/*.js?(x)\""
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write"
+    ],
+    "*.ts?(x)": [
+      "eslint",
+      "prettier  --write"
+    ]
+  },
+  "dependencies": {
+    "@vant/weapp": "^1.6.8",
+    "react": "^16.14.0",
+    "react-dom": "^17.0.2",
+    "react-router-dom": "^5.2.0",
+    "remax": "^2.9.1"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.2",
+    "eslint": "^7.24.0",
+    "eslint-plugin-react": "^7.23.2",
+    "husky": "^6.0.0",
+    "lint-staged": "^10.5.4",
+    "prettier": "^2.2.1"
+  }
+}
