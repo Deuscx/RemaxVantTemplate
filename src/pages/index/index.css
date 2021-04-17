@@ -10,6 +10,10 @@
   pointer-events: none;
 }
 
+.user {
+  height: 5rem;
+  width: 5rem;
+}
 .text {
   margin-top: 64px;
 }

@@ -11,10 +11,8 @@
     "dev": "remax build -t wechat -w",
     "build": "cross-env NODE_ENV=production remax build -t wechat",
     "lint": "eslint --color --ext .js,.jsx --fix src",
-    "format": "prettier --write \"src/**/*.js?(x)\""
-  },
-  "gitHooks": {
-    "pre-commit": "lint-staged"
+    "format": "prettier --write \"src/**/*.js?(x)\"",
+    "prepare": "husky install"
   },
   "lint-staged": {
     "*.js": [
@@ -36,6 +34,7 @@
     "cross-env": "^7.0.2",
     "eslint": "^7.24.0",
     "eslint-plugin-react": "^7.23.2",
+    "husky": "^6.0.0",
     "lint-staged": "^10.5.4",
     "prettier": "^2.2.1"
   }
