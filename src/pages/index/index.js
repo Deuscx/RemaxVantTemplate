@@ -1,9 +1,9 @@
-import * as React from 'react'
-import { View, Text, Image, navigateTo } from 'remax/one'
+import * as React from "react";
+import { View, Text, Image, navigateTo } from "remax/one";
 
-import VanButton from '@vant/weapp/dist/button'
+import VanButton from "@vant/weapp/dist/button";
 
-import styles from './index.css'
+import styles from "./index.css";
 
 export default () => {
   return (
@@ -21,7 +21,7 @@ export default () => {
           type="primary"
           bindclick={() =>
             navigateTo({
-              url: '/pages/hello/index',
+              url: "/pages/hello/index",
             })
           }
         >
@@ -29,5 +29,5 @@ export default () => {
         </VanButton>
       </View>
     </View>
-  )
-}
+  );
+};

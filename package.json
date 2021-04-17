@@ -8,7 +8,7 @@
   "author": "Deuscx <48537979+Deuscx@users.noreply.github.com>",
   "license": "MIT",
   "scripts": {
-    "dev:wechat": "remax build -t wechat -w",
+    "dev": "remax build -t wechat -w",
     "build": "cross-env NODE_ENV=production remax build -t wechat",
     "lint": "eslint --color --ext .js,.jsx --fix src",
     "format": "prettier --write \"src/**/*.js?(x)\""
@@ -19,10 +19,6 @@
   "lint-staged": {
     "*.js": [
       "prettier --write"
-    ],
-    "*.ts?(x)": [
-      "eslint",
-      "prettier  --write"
     ]
   },
   "dependencies": {
